@@ -1,8 +1,21 @@
-def name(h=1, g=5, *args, key):
-    print(h)
-    print(g)
-    print(args)
-    print(key)
+import math
 
+PI = math.pi
+def radius():
+    n = float(input("Введите диаметр в см: "))
+    n /= 2
+    return n
 
-name(1, 2, 3, 5, 6, key=10)
+def height():
+    m = float(input("Введите высоту в см: "))
+    return m
+
+def volume():
+    r = radius()
+    h = height()
+    s = PI*r**2
+    v = s*h
+
+    return v
+
+print("Объем цилиндра:", volume(), " см3")
