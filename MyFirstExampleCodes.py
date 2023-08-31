@@ -18,4 +18,10 @@ def volume():
 
     return v
 
-print("Объем цилиндра:", volume(), " см3")
+#print("Объем цилиндра:", volume(), " см3")
+
+def massa(g):
+    n = float(input("Удельный вес в г/см3: "))
+    return g*n/1000
+
+print("Вес цииндра в кг: ", massa(volume()))
