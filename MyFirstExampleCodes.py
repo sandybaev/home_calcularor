@@ -25,3 +25,5 @@ def massa(g):
     return g*n/1000
 
 print("Вес цииндра в кг: ", massa(volume()))
+
+
